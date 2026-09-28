@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Incident Agent — Hindsight Memory</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <h1>Incident Response Agent</h1>
+    <p>Structural fingerprinting + single-flight memory coalescing + Hindsight.</p>
+    <section class="controls">
+      <label>Alert count
+        <select id="count">
+          <option>20</option><option>50</option><option selected>100</option><option>140</option>
+        </select>
+      </label>
+      <button id="run">Run alert storm</button>
+    </section>
+    <section class="metrics">
+      <div><b id="alerts">0</b><span>Alerts</span></div>
+      <div><b id="incidents">0</b><span>Grouped incidents</span></div>
+      <div><b id="recalls">0</b><span>Recall calls</span></div>
+      <div><b id="retains">0</b><span>Retain calls</span></div>
+    </section>
+    <section>
+      <h2>Incident groups</h2>
+      <table>
+        <thead><tr><th>Fingerprint</th><th>Alerts</th><th>Diagnosis</th><th>Action</th></tr></thead>
+        <tbody id="results"></tbody>
+      </table>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+main { max-width: 1100px; margin: 40px auto; padding: 24px; }
+.controls, .metrics { display: flex; gap: 16px; align-items: center; margin: 24px 0; }
+.metrics > div { background: #1e293b; padding: 18px; border-radius: 12px; min-width: 130px; }
+.metrics b, .metrics span { display: block; }
+.metrics b { font-size: 28px; }
+button, select { padding: 10px 14px; border-radius: 8px; border: 0; }
+button { cursor: pointer; }
+table { width: 100%; border-collapse: collapse; background: #111827; }
+th, td { text-align: left; padding: 10px; border-bottom: 1px solid #334155; vertical-align: top; }
